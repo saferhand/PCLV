@@ -670,9 +670,31 @@ void PCLVisualizer::onNormalDisTrans()
 	Eigen::Matrix4f init_guess = (init_translation * init_rotation).matrix();
 
 	pcl::PointCloud<pcl::PointXYZ>::Ptr output_cloud(new pcl::PointCloud<pcl::PointXYZ>);
+
+
+
+	int a = clock();
 	ndt.align(*output_cloud, init_guess);
+	int b = clock();
+	int c;
+	c = b - a;
+
+	//把C写到文件里
+	ofstream fileoutput;
+	fileoutput.open("time.txt");
+	fileoutput << c;
+	fileoutput.close();
+
+
+
+
 	pcl::transformPointCloud(*cloud_rgs_source, *output_cloud, ndt.getFinalTransformation());
 	pcl::io::savePCDFile("cloud_NDT.pcd", *output_cloud);
+
+
+
+
+
 
 
 	boost::shared_ptr<pcl::visualization::PCLVisualizer>

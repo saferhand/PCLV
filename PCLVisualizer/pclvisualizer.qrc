@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/">
+      <file>Resources/images/open.png</file>
+      <file>Resources/images/open-registration.png</file>
+      <file>Resources/images/cloudsource.png</file>
+      <file>Resources/images/cloudtarget.png</file>
+      <file>Resources/images/save.png</file>
+      <file>Resources/images/txt2pcd.png</file>
+      <file>Resources/images/remove.png</file>
+      <file>Resources/images/exit.png</file>
+      <file>Resources/images/eye.png</file>
+      <file>Resources/images/opencloud.png</file>
+      <file>Resources/images/logo.png</file>
+      <file>Resources/images/front_view.png</file>
+      <file>Resources/images/back_view.png</file>
+      <file>Resources/images/top_view.png</file>
+      <file>Resources/images/bottom_view.png</file>
+      <file>Resources/images/left_view.png</file>
+      <file>Resources/images/right_view.png</file>
+      <file>Resources/images/bgcolor.png</file>
+      <file>Resources/images/cube.png</file>
+      <file>Resources/images/cylinder.png</file>
+      <file>Resources/images/sphere.png</file>
+    </qresource>
+</RCC>
